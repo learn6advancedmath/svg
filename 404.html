@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Page not found</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: system-ui, sans-serif;
+        background: #020810;
+        color: #f8f6f1;
+      }
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        text-align: center;
+      }
+      main {
+        max-width: 32rem;
+        padding: 2rem;
+      }
+      a {
+        color: #9dc8ff;
+      }
+    </style>
+    <script>
+      // GitHub Pages serves this file for missing paths. Return visitors to the
+      // app entry point rather than leaving them on a dead-end 404 page.
+      window.addEventListener('DOMContentLoaded', () => {
+        window.setTimeout(() => window.location.replace('/'), 2500);
+      });
+    </script>
+  </head>
+  <body>
+    <main>
+      <h1>Page not found</h1>
+      <p>Taking you back to the home page…</p>
+      <p><a href="/">Go to the home page now</a></p>
+    </main>
+  </body>
+</html>
